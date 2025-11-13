@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Changa:wght@200..800&family=Days+One&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Days+One&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <svg xmlns="http://www.w3.org/2000/svg" class=" game-icon" viewBox="0 0 640 640">
+                <path fill="rgb(203, 254, 28)"
+                    d="M192 160L192 256L325.4 256L267.8 160L192 160zM128 287L128 128C128 110.3 142.3 96 160 96L267.8 96C290.3 96 311.1 107.8 322.7 127.1L400.1 256L464.1 256L464.1 184C464.1 170.7 474.8 160 488.1 160C501.4 160 512.1 170.7 512.1 184L512.1 256L560.1 256C586.6 256 608.1 277.5 608.1 304L608.1 345.5C608.1 359.7 601.8 373.3 590.8 382.4L555.8 411.6C582.3 426.8 600.1 455.3 600.1 488C600.1 536.6 560.7 576 512.1 576C463.5 576 424.1 536.6 424.1 488C424.1 473.6 427.6 460 433.7 448L332.5 448C329.5 461.4 324.6 474 318.1 485.7C325.8 495.1 325.3 509.1 316.5 517.9L293.9 540.5C285.1 549.3 271.2 549.8 261.7 542.1C252.4 547.3 242.4 551.4 231.9 554.4C230.7 566.5 220.5 576 208 576L176 576C163.6 576 153.3 566.5 152.1 554.4C141.6 551.4 131.7 547.2 122.3 542.1C112.9 549.8 98.9 549.3 90.1 540.5L67.5 517.8C58.7 509 58.2 495.1 65.9 485.6C60.7 476.3 56.6 466.3 53.6 455.8C41.5 454.6 32 444.4 32 431.9L32 399.9C32 387.5 41.5 377.2 53.6 376C56.6 365.5 60.8 355.6 65.9 346.2C58.2 336.8 58.7 322.8 67.5 314L90.1 291.4C98.9 282.6 112.8 282.1 122.3 289.8C124.2 288.8 126 287.8 128 286.8zM192 352C156.7 352 128 380.7 128 416C128 451.3 156.7 480 192 480C227.3 480 256 451.3 256 416C256 380.7 227.3 352 192 352zM472 488C472 510.1 489.9 528 512 528C534.1 528 552 510.1 552 488C552 465.9 534.1 448 512 448C489.9 448 472 465.9 472 488z" />
+            </svg>
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" dir="rtl">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link " href="#dash">
+                            النظام الذكي للمزارعين
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#learn">نصائح زراعية ذكية</a>
+                    </li>
+                    
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">تواصل معنا</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex align-items-center gap-3">
+                    
+                    <button class="btn sign col-sm-12" type="submit">Sign In</button>
+                </form>
+            </div>
+        </div>
+    </nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand text-warning fw-bold" href="#">الزراعة الذكية 🌿</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">الصفحة الرئيسية</a></li>
+          <li class="nav-item"><a class="nav-link" href="#dash">النظام الذكي</a></li>
+          <li class="nav-item"><a class="nav-link" href="#learn">نصائح ذكية</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">تواصل معنا</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+    <main id="home">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-6 col-sm-12 pe-3">
+                    <h1>نحو زراعة أكثر<span style="color:rgb(203, 254, 28) ;"> ذكاءً واستدامة </span>
+                    </h1>
+                    <p>نحو مستقبل زراعي أفضل: توصيات ذكية لكل مزرعة، لإنتاج أكثر باستخدام أقل موارد.</p>
+                    <div class="main-btn">
+                        <a href="#dash">
+                        <button class="btn bg-btn">🌿 النظام الذكي للمزارعين</button></a>
+                        <a href="#learn">
+                            <button class="btn none-border">تعلم أكثر</button></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 mt-sm-5 ps-md-5 position-relative d-flex">
+                    <div class="main-img ">
+                        <img src="images/premium_photo-1681911005143-cb489e1a2afa.avif" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- <section class="wh" id="learn">
+        <div class="container  p-5 ">
+            <div class="text-white d-flex flex-column align-items-center mt-5">
+                <h2 class="latest">نصائح زراعية ذكية</h2>
+                <h4 class="text-secondary fa-lg mb-5 ">اكتشف أفضل الطرق لاستخدام المياه والأسمدة بذكاء، وابدأ رحلتك نحو
+                    زراعة أكثر استدامة.</h4>
+            </div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item ">
+                    <h2 class="accordion-header ">
+                        <button class="accordion-button collapsed d-flex gap-2 " type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            كيف أستخدم الماء بشكل أكثر فعالية في الزراعة؟
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body"> - استخدم الري بالتنقيط أو الرش بدلاً من الري الغمر، لتقليل الهدر.
+                            <br>
+                            - اسقِ النباتات في الصباح الباكر أو المساء لتقليل التبخر.
+                            <br>
+                            - اجمع مياه الأمطار واستخدمها للري إذا أمكن.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex gap-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            كيف أعطي النباتات كمية مناسبة من السماد؟
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">- اتبع توصيات الجرعة الخاصة بالنبات.
+                            <br>
+                            - استخدم الأسمدة العضوية لأنها أبطأ في التحلل وتقلل الهدر.
+                            <br>
+                            - لا تفرط في التسميد لتجنب إضرار التربة والنبات.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex gap-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            هل هناك طرق لتقليل استهلاك الأسمدة؟
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">- قم بتحليل التربة لمعرفة العناصر الغذائية المفقودة فقط.
+                            <br>
+                            - استخدم التسميد الورقي أو السماد العضوي لتغذية النباتات بشكل مباشر وفعال.
+                            <br>
+                            - التناوب بين النباتات لتحسين خصوبة التربة طبيعيًا.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex gap-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            كيف أزيد فعالية الري؟
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            - ضع النباتات التي تحتاج ماء أكثر معًا لتسهيل الري.
+                            <br>
+                            - غطِ التربة بالقش أو المواد العضوية لتقليل التبخر.
+                            <br>
+                            - تحقق من رطوبة التربة قبل الري لتجنب الإفراط.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex gap-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            هل هناك تقنيات حديثة لتوفير الماء والأسمدة؟
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            - أنظمة الري الذكية التي تتحكم في الوقت والكمية.
+                            <br>
+                            - استخدام الأسمدة الذكية أو البطيئة التحلل لتقليل الهدر.
+                            <br>
+                            - الزراعة المتكاملة أو الزراعة العمودية لتقليل استهلاك الموارد.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed d-flex gap-2" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            كيف أحافظ على صحة التربة لتقليل الحاجة للمياه والأسمدة؟
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            - إضافة السماد العضوي باستمرار لتحسين احتفاظ التربة بالماء.
+                            <br>
+                            - تدوير المحاصيل والحفاظ على الغطاء النباتي لحماية التربة.
+                            <br>
+                            - تجنب حراثة التربة الزائدة التي تزيد فقدان الماء.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+
+
+
+
+
+<section class="dash" id="dash">
+    <!-- <div class="container"> -->
+         <div class="container dashboard my-5">
+    <div class="welcome">🌿 مرحباً بك في النظام الذكي للمزارعين! اختر البيانات للحصول على نصائح مخصصة.</div>
+    
+    <h2>🌿 النظام الذكي للمزارعين</h2>
+
+    <form id="farmForm">
+      <div class="row g-3">
+        <!-- الحقول كما هي، مع إضافة أيقونات متحركة إذا أردت -->
+        <div class="col-md-4">
+          <label>نوع المحصول 🌾</label>
+          <select id="crop">
+            <!-- خيارات المحاصيل كما هي -->
+            <option value="قمح">قمح</option>
+            <option value="ذرة">ذرة</option>
+            <option value="أرز">أرز</option>
+            <option value="شعير">شعير</option>
+            <option value="عدس">عدس</option>
+            <option value="فول">فول</option>
+            <option value="حمص">حمص</option>
+            <option value="طماطم">طماطم</option>
+            <option value="خيار">خيار</option>
+            <option value="بطاطس">بطاطس</option>
+            <option value="بصل">بصل</option>
+            <option value="ثوم">ثوم</option>
+            <option value="فلفل">فلفل</option>
+            <option value="باذنجان">باذنجان</option>
+            <option value="كوسة">كوسة</option>
+            <option value="بامية">بامية</option>
+            <option value="جزر">جزر</option>
+            <option value="ملفوف">ملفوف</option>
+            <option value="خس">خس</option>
+            <option value="سبانخ">سبانخ</option>
+            <option value="كرنب">كرنب</option>
+            <option value="تفاح">تفاح</option>
+            <option value="عنب">عنب</option>
+            <option value="موز">موز</option>
+            <option value="ليمون">ليمون</option>
+            <option value="برتقال">برتقال</option>
+            <option value="مانجو">مانجو</option>
+            <option value="خوخ">خوخ</option>
+            <option value="فراولة">فراولة</option>
+            <option value="كرز">كرز</option>
+            <option value="تين">تين</option>
+            <option value="نعناع">نعناع</option>
+            <option value="ريحان">ريحان</option>
+            <option value="زعتر">زعتر</option>
+            <option value="كزبرة">كزبرة</option>
+            <option value="بقدونس">بقدونس</option>
+            <option value="قصب سكر">قصب سكر</option>
+            <option value="بنجر">بنجر</option>
+            <option value="قطن">قطن</option>
+            <option value="كتان">كتان</option>
+            <option value="فول الصويا">فول الصويا</option>
+            <option value="لوبيا">لوبيا</option>
+            <option value="بازلاء">بازلاء</option>
+            <option value="شمام">شمام</option>
+            <option value="بطيخ">بطيخ</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label>نوع التربة 🌍</label>
+          <select id="soil">
+            <option value="طينية">طينية</option>
+            <option value="رملية">رملية</option>
+            <option value="طفلية">طفلية</option>
+            <option value="جيرية">جيرية</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label>مساحة الأرض (فدان) 📏</label>
+          <input type="number" id="area" placeholder="مثلاً 5">
+        </div>
+
+        <div class="col-md-4">
+          <label>مرحلة نمو المحصول 🌱</label>
+          <select id="growthStage">
+            <option value="زراعة">زراعة</option>
+            <option value="نمو">نمو</option>
+            <option value="إنتاج">إنتاج</option>
+            <option value="حصاد">حصاد</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label>طريقة الري 💧</label>
+          <select id="irrigationMethod">
+            <option value="غمر">غمر</option>
+            <option value="تنقيط">تنقيط</option>
+            <option value="رش">رش</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label>كمية السماد 🧪</label>
+          <select id="fertilizerAmount">
+            <option value="خفيفة">خفيفة</option>
+            <option value="متوسطة">متوسطة</option>
+            <option value="كثيفة">كثيفة</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label>المشاكل الموجودة 🐛</label>
+          <select id="problems">
+            <option value="لا توجد">لا توجد</option>
+            <option value="حشرات">حشرات</option>
+            <option value="أمراض">أمراض</option>
+            <option value="نقص تغذية">نقص تغذية</option>
+            <option value="جفاف">جفاف</option>
+            <option value="تربة فقيرة">تربة فقيرة</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label>الموارد المتاحة 🌿</label>
+          <select id="resources">
+            <option value="لا شيء">لا شيء</option>
+            <option value="سماد عضوي">سماد عضوي</option>
+            <option value="مياه إضافية">مياه إضافية</option>
+            <option value="غطاء التربة بالقش">غطاء التربة بالقش</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label>الموسم 🍂</label>
+          <select id="season">
+            <option value="ربيع">ربيع</option>
+            <option value="صيف">صيف</option>
+            <option value="خريف">خريف</option>
+            <option value="شتاء">شتاء</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="button" onclick="analyze()">🔍 تحليل الذكاء الزراعي</button>
+    </form>
+
+    <div id="resultBox" class="result-box"></div>
+  </div>
+    <!-- </div> -->
+</section>
+
+
+
+<section class="wh" id="learn">
+  <div class="container p-5">
+    <div class="text-white d-flex flex-column align-items-center mt-5">
+      <h2 class="latest">نصائح زراعية ذكية</h2>
+      <h4 class="text-secondary fa-lg mb-5">
+        اكتشف أفضل الطرق لاستخدام المياه والأسمدة بذكاء، وابدأ رحلتك نحو زراعة أكثر استدامة.
+      </h4>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <!-- 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed d-flex gap-2" type="button"
+            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+            aria-expanded="false" aria-controls="flush-collapseOne">
+            كيف أستخدم الماء بشكل أكثر فعالية في الزراعة؟
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            - استخدم الري بالتنقيط أو الرش بدلاً من الري الغمر، لتقليل الهدر.<br>
+            - اسقِ النباتات في الصباح الباكر أو المساء لتقليل التبخر.<br>
+            - اجمع مياه الأمطار واستخدمها للري إذا أمكن.
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed d-flex gap-2" type="button"
+            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+            aria-expanded="false" aria-controls="flush-collapseTwo">
+            كيف أعطي النباتات كمية مناسبة من السماد؟
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            - اتبع توصيات الجرعة الخاصة بالنبات.<br>
+            - استخدم الأسمدة العضوية لأنها أبطأ في التحلل وتقلل الهدر.<br>
+            - لا تفرط في التسميد لتجنب إضرار التربة والنبات.
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed d-flex gap-2" type="button"
+            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+            aria-expanded="false" aria-controls="flush-collapseThree">
+            هل هناك طرق لتقليل استهلاك الأسمدة؟
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            - قم بتحليل التربة لمعرفة العناصر الغذائية المفقودة فقط.<br>
+            - استخدم التسميد الورقي أو السماد العضوي لتغذية النباتات بشكل مباشر وفعال.<br>
+            - التناوب بين النباتات لتحسين خصوبة التربة طبيعيًا.
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed d-flex gap-2" type="button"
+            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+            aria-expanded="false" aria-controls="flush-collapseFour">
+            كيف أزيد فعالية الري؟
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            - ضع النباتات التي تحتاج ماء أكثر معًا لتسهيل الري.<br>
+            - غطِ التربة بالقش أو المواد العضوية لتقليل التبخر.<br>
+            - تحقق من رطوبة التربة قبل الري لتجنب الإفراط.
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed d-flex gap-2" type="button"
+            data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+            aria-expanded="false" aria-controls="flush-collapseFive">
+            هل هناك تقنيات حديثة لتوفير الماء والأسمدة؟
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            - أنظمة الري الذكية التي تتحكم في الوقت والكمية.<br>
+            - استخدام الأسمدة الذكية أو البطيئة التحلل لتقليل الهدر.<br>
+            - الزراعة المتكاملة أو الزراعة العمودية لتقليل استهلاك الموارد.
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed d-flex gap-2" type="button"
+            data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+            aria-expanded="false" aria-controls="flush-collapseSix">
+            كيف أحافظ على صحة التربة لتقليل الحاجة للمياه والأسمدة؟
+          </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            - إضافة السماد العضوي باستمرار لتحسين احتفاظ التربة بالماء.<br>
+            - تدوير المحاصيل والحفاظ على الغطاء النباتي لحماية التربة.<br>
+            - تجنب حراثة التربة الزائدة التي تزيد فقدان الماء.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="contact" id="contact">
+  <div class="container py-5">
+    <div class="text-white d-flex flex-column align-items-center mt-5">
+      <p class="latest">تواصل معنا</p>
+      <h2 class="latest-h2">نحن هنا لمساعدتك</h2>
+      <p class="text-secondary fa-lg mb-5">
+        لديك استفسار أو تحتاج إلى دعم؟ فريقنا الزراعي جاهز لخدمتك دائمًا 🌿
+      </p>
+    </div>
+
+    <div class="row">
+      <!-- الجزء الأيسر -->
+      <div class="col-lg-6 col-md-12 col-sm-12">
+        <div class="two-section d-flex text-white gap-3 mb-4">
+          <div class="left-side">
+            <i class="fa-solid fa-location-dot fa-lg"></i>
+          </div>
+          <div class="right-side">
+            <h4>موقعنا</h4>
+            <p class="text-secondary">المنطقة الزراعية، وادي التكنولوجيا، مصر</p>
+          </div>
+        </div>
+
+        <div class="two-section d-flex text-white gap-3 mb-4">
+          <div class="left-side">
+            <i class="fa-solid fa-phone fa-lg"></i>
+          </div>
+          <div class="right-side">
+            <h4>رقم الهاتف</h4>
+            <p class="text-secondary">+20 100 234 5678</p>
+          </div>
+        </div>
+
+        <div class="two-section d-flex text-white gap-3 mb-4">
+          <div class="left-side">
+            <i class="fa-solid fa-envelope fa-lg"></i>
+          </div>
+          <div class="right-side">
+            <h4>البريد الإلكتروني</h4>
+            <p class="text-secondary">info@smartagri.com</p>
+          </div>
+        </div>
+
+        <div class="join">
+          <h3>انضم إلى مجتمعنا الزراعي</h3>
+          <p>تابعنا على وسائل التواصل لمعرفة آخر الابتكارات في الزراعة الذكية</p>
+          <div class="icons d-flex gap-3">
+            <div class="icon">
+              <i class="fa-brands fa-facebook-f fa-lg"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-x-twitter fa-lg"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-square-instagram fa-lg"></i>
+            </div>
+            <div class="icon">
+              <i class="fa-brands fa-youtube fa-lg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- الجزء الأيمن -->
+      <div class="col-lg-6 col-md-12 col-sm-12 form ">
+        <h3>راسلنا مباشرة</h3>
+        <form action="" class="mb-5">
+          <div class="name d-flex justify-content-between">
+            <div class="first w-50 ">
+              <label for="fname">الاسم الأول</label>
+              <br />
+              <input type="text" placeholder="اكتب اسمك الأول" />
+            </div>
+            <div class="last w-50 me-3">
+              <label for="lname">الاسم الأخير</label>
+              <br />
+              <input type="text" placeholder="اكتب اسمك الأخير" />
+            </div>
+          </div>
+
+          <div class="email">
+            <label for="email">البريد الإلكتروني</label>
+            <br />
+            <input type="email" placeholder="example@email.com" />
+          </div>
+
+          <div class="select">
+            <label for="">موضوع الرسالة</label>
+            <br />
+            <select>
+              <option value="">استفسار عام</option>
+              <option value="">دعم فني</option>
+              <option value="">تعاون زراعي</option>
+              <option value="">شراكة</option>
+              <option value="">طلب تجربة النظام</option>
+            </select>
+          </div>
+
+          <div class="message">
+            <label for="">الرسالة</label>
+            <br />
+            <textarea rows="4" placeholder="اكتب رسالتك هنا..."></textarea>
+          </div>
+
+          <div class="check">
+            <input type="checkbox" id="newsletter" />
+            <label for="newsletter">اشترك في نشرتنا الزراعية الأسبوعية 🌱</label>
+          </div>
+
+          <button class="contact-btn">
+            إرسال الرسالة <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+    <footer>
+        <p>© 2023 مشروع الزراعة الذكية. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
