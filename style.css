@@ -551,3 +551,14 @@ footer {
       .dashboard h2 { font-size: 1.5rem; }
       .dashboard .col-md-4 { margin-bottom: 15px; }
     }
+
+
+
+
+
+    @media (max-width: 768px) {
+    .latest::before,
+    .latest::after {
+        display: none;
+    }
+}
