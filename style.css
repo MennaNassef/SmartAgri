@@ -4,58 +4,6 @@
     font-family: Chakra Petch, sans-serif;
 }
 
-/* .navbar svg {
-    width: 25px;
-}
-
-.navbar .game-icon {
-    color: rgb(203, 254, 28);
-    margin-right: 10px;
-    width: 40px;
-}
-.navbar{
-    direction: ltr ;
-    position: fixed;
-    width: 100%;
-}
-.navbar-brand {
-    color: rgb(203, 254, 28) !important;
-}
-
-.nav-item a {
-    padding: 15px;
-}
-
-.nav-item a:hover {
-    color: rgb(203, 254, 28) !important;
-}
-
-nav {
-    background-color: #0b0e13;
-    border: oklch(27.8% .033 256.848) solid 1px;
-    z-index: 99999;
-    position: fixed;
-    top: 0;
-    left: 0;
-    color: #f1f1f1;
-    font-size: 18px;
-}
-
-.sign {
-    font-weight: 700;
-    padding: 8px 24px;
-    background-color: rgb(203, 254, 28) !important;
-    font-size: 16px;
-}
-
-.sign:hover {
-    color: #1a1a1a;
-
-} */
-
-
-
-
     nav.navbar {
       background: linear-gradient(90deg, #0a0d1a, #141822);
       padding: 1rem 2rem;
@@ -87,7 +35,7 @@ main {
     background-attachment: fixed;
     width: 100%;
     padding-bottom: 64px;
-    padding-top: 100px;
+    padding-top: 120px;
     min-height: 100vh;
     background-position: 50%;
 }
@@ -105,7 +53,7 @@ h6 {
 }
 
 main h1 {
-    font-size: 100px;
+    font-size: 80px;
     margin-bottom: 24px;
     color: #f1f1f1;
 }
@@ -560,5 +508,139 @@ footer {
     .latest::before,
     .latest::after {
         display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* أنماط محدثة للصفحة الجديدة - مطابقة للألوان الأصلية مع حركات */
+.sustainable-section {
+    background: linear-gradient(135deg, #0b0e13 0%, #1a1d25 100%); /* نفس خلفية الـ Contact والـ Footer */
+    color: white;
+    padding: 50px 0;
+    overflow: hidden; /* للحركات */
+}
+
+.sustainable-section .latest {
+    color: #cbfe1c; /* نفس لون العناوين الأخضر الفاتح */
+    animation: fadeInUp 1s ease-out; /* حركة ظهور من الأسفل */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(203, 254, 28, 0.2); /* ظل أخضر خفيف زي الـ Accordion */
+    transition: all 0.3s ease; /* انتقال سلس */
+    background: linear-gradient(145deg, #1b1e26 0%, #2a2e38 100%); /* خلفية داكنة متدرجة زي الـ Dashboard */
+    color: #f1f1f1; /* نص أبيض فاتح */
+    border-radius: 15px;
+    animation: fadeInUp 0.8s ease-out; /* حركة ظهور لكل كارد */
+    animation-delay: calc(var(--card-index) * 0.1s); /* تأخير متدرج للحركة */
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02); /* رفع وتكبير خفيف عند التمرير */
+    box-shadow: 0 10px 30px rgba(203, 254, 28, 0.4); /* ظل أقوى */
+    border: 2px solid #cbfe1c; /* حدود خضراء فاتحة عند التمرير */
+}
+
+.card-title {
+    color: #cbfe1c; /* لون العناوين الأخضر الفاتح */
+    font-weight: 600;
+}
+
+.card-text {
+    color: #f1f1f1; /* نص أبيض فاتح */
+}
+
+.stat-box {
+    background: linear-gradient(145deg, #cbfe1c 0%, #a8e600 100%); /* تدرج أخضر فاتح زي الـ Result box */
+    color: #0b0e13; /* نص داكن */
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(203, 254, 28, 0.3);
+    transition: transform 0.3s ease;
+    animation: slideIn 0.5s ease-out; /* حركة انزلاق للإحصائيات */
+}
+
+.stat-box:hover {
+    transform: scale(1.05); /* تكبير خفيف عند التمرير */
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.example-box {
+    background: linear-gradient(145deg, #1b1e26 0%, #2a2e38 100%); /* خلفية داكنة متدرجة */
+    color: #f1f1f1; /* نص أبيض فاتح */
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(203, 254, 28, 0.2);
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.8s ease-out; /* حركة ظهور */
+}
+
+.example-box:hover {
+    transform: translateY(-5px); /* رفع عند التمرير */
+    box-shadow: 0 10px 25px rgba(203, 254, 28, 0.4);
+}
+
+.example-box h5 {
+    color: #cbfe1c; /* لون العناوين الأخضر الفاتح */
+}
+
+/* تحسين الاستجابة */
+@media (max-width: 768px) {
+    .sustainable-section {
+        padding: 30px 0;
+    }
+    .card {
+        margin:15px 20px;
+    }
+    .stat-box, .example-box {
+        padding: 15px;
     }
 }
